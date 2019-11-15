@@ -8,22 +8,20 @@ body  {
 }
 #mainH{
   margin:  0 auto;
-  font-family = Arial;
+  font: Arial;
 }
     
 </style>
 <body id="body">
- <button onclick="Reset()" style="background-color: greenyellow ; border-color: black ;">Reset</button>
     <div id="mainH">
         <h1>Explore The World</h1>
      <code><h2>by Carl Marino</h2></code>
-                                
+
         <p id="output">
-            
+
             search</p>
      <img src="" id="img"/>
         <input type="text" id="usr" value=""/>
-        
         <button onclick="Get_info()" style="background-color: greenyellow ; border-color: black ;">Enter</button>
         </div>
 
@@ -34,37 +32,27 @@ body  {
    
     H.style.textAlign="center";
     function Get_info(){
-     var usr = document.getElementById("usr");
         var input = document.getElementById("usr");
         var answer = document.getElementById("output");
      var A = document.getElementById("img");
         if (input.value=="help"){
-            answer.innerHTML="Search something we may have info of.";
+            answer.innerHTML="search something we may have info";
         };
        if (input.value=="sebastian"|| input.value=="Sebastian"){
             answer.innerHTML="nationality: indonesien, Hair Color: black";
-        A.src="
+        
         };
      if (input.value=="itay" || input.value=="Itay"){
-            answer.innerHTML="Nationality: Israelian, Hair Color: Braces";
+            answer.innerHTML="nationality: Hebrew, Hair Color: braces";
             A.src = "https://raw.githubusercontent.com/ccm7676/data-base/master/Photo%20on%2014-11-2019%20at%2013.32.jpg";
   
         };
-      if (input.value=="daniel" || input.value=="Daniel"){
-            answer.innerHTML="Nationality: American / Mexican, Hair Color: Black";
-            A.src = "https://photos.veracross.com/ish/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZXJzb25fcGsiOjE2OTQ3LCJpc3MiOiJpc2giLCJpYXQiOjE1NjIwMzI1Njd9.3SCfoNc5PNvZQpJhajVMs1AqkdCQ3yjb4peCopCcZgE=.jpg";
-  
-        };
+        
     };
- function Reset(){
-     
-     A.src =" ";
-     usr.innerHTML = " ";
- };
     
     
 </script>
-    
+
 </body>
 </head>
 </html>
