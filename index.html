@@ -13,7 +13,7 @@ body  {
     
 </style>
 <body id="body">
- <button onclick="Get_info()" style="background-color: greenyellow ; border-color: black ;">Enter</button>
+ <button onclick="Get_info()" style="background-color: greenyellow ; border-color: black ;">Reset</button>
     <div id="mainH">
         <h1>Explore The World</h1>
      <code><h2>by Carl Marino</h2></code>
@@ -30,6 +30,9 @@ body  {
 <script >
     var B = document.getElementById("body");
     var H = document.getElementById("mainH");
+ if(key == 13) {
+  Get_info()
+ }
    
     H.style.textAlign="center";
     function Reset(){
