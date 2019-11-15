@@ -24,13 +24,21 @@ body  {
         <input type="text" id="usr" value=""/>
         <button onclick="Get_info()" style="background-color: greenyellow ; border-color: black ;">Enter</button>
         </div>
+<button onclick="Get_info()" style="background-color: greenyellow ; border-color: black ;">Enter</button>
 
-
-<script>
+<script >
     var B = document.getElementById("body");
     var H = document.getElementById("mainH");
    
     H.style.textAlign="center";
+    function Reset(){
+     var A = document.getElementById("img");
+     var answer = document.getElementById("output");
+     A.src = "";
+     answer.innerHTML="";
+     
+     
+    };
     function Get_info(){
         var input = document.getElementById("usr");
         var answer = document.getElementById("output");
