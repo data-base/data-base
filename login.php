@@ -13,9 +13,9 @@ if(isset($_GET['login'])) {
     //Überprüfung des Passworts
     if ($user !== false && password_verify($passwort, $user['passwort'])) {
         $_SESSION['userid'] = $user['id'];
-        die('Login erfolgreich. Weiter zu <a href="geheim.php">internen Bereich</a>');
+        die('Login successfull<a href="info.php">continue</a>');
     } else {
-        $errorMessage = "E-Mail oder Passwort war ungültig<br>";
+        $errorMessage = "E-Mail or Password invalid<br>";
     }
     
 }
@@ -40,7 +40,7 @@ E-Mail:<br>
 Dein Passwort:<br>
 <input type="password" size="40"  maxlength="250" name="passwort"><br>
  
-<input type="submit" value="Abschicken">
+<input type="submit" value="submit">
 </form> 
 </body>
 </html>
