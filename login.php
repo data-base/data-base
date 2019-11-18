@@ -13,7 +13,7 @@ if(isset($_GET['login'])) {
     //Überprüfung des Passworts
     if ($user !== false && password_verify($passwort, $user['passwort'])) {
         $_SESSION['userid'] = $user['id'];
-        die('Login successfull<a href="info.php">continue</a>');
+        die('Login successfull<a href="check.php">continue</a>');
     } else {
         $errorMessage = "E-Mail or Password invalid<br>";
     }
