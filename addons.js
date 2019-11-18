@@ -1,11 +1,6 @@
- var B = document.getElementById("body");
+    var B = document.getElementById("body");
     var H = document.getElementById("mainH");
- 
-   
     H.style.textAlign="center";
-
-
-  
     function Get_info(){
         var input = document.getElementById("usr");
         var answer = document.getElementById("output");
