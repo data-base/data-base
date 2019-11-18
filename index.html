@@ -6,6 +6,11 @@ body  {
   
   background-color: blue;
 }
+ .halfsize {
+    -moz-transform:scale(0.5);
+    -webkit-transform:scale(0.5);
+    transform:scale(0.5);
+}
 #mainH{
   margin:  0 auto;
  font-family: courier;
@@ -24,7 +29,7 @@ img {
      
         <input type="text" id="usr" value=""/>
         <button onclick="Get_info()" style="background-color: greenyellow ; border-color: black ;"><br>Enter</br></button>
-        <img style="width: 50%; height: 50%" src="" id="img"/>
+        <img class="halfsize" src="" id="img"/>
  <p id="output">
 
             search</p>
