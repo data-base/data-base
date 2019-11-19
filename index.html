@@ -23,7 +23,12 @@ img {
  }
 </style>
 <body id="body">
-    <div id="mainH">
+ <?php
+session_start();
+if(!isset($_SESSION['userid'])) {
+    die('please <a style=" size: 1000px; background-color: white; href="login.php">Log in</a>');
+    
+<div id="mainH">
      <h1>DataBook<sup>©</sup></h1>
      <h2>by Carl Marino and Itay-Cyber</h2>
      
