@@ -6,3 +6,4 @@ if(!isset($_SESSION['userid'])) {
 else{
 <a href="index.html>go to page</a>
 }
+?>
