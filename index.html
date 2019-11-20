@@ -27,7 +27,7 @@ img {
  }
 </style>
 <body id="body">
- <canvas id='login'>
+ <canvas id='login' visible="visible">
   <form>
    <formfield>
     <legend>Register to DataBook</legend>
@@ -64,7 +64,11 @@ img {
 <script src="addons.js">  
 </script>
  <script type="text/javascript">
-  
+  var isLogin = false;
+  var login = document.getElementById("login");
+  if (isLogin == false) {
+   login.visible = "visible";
+  }
  </script>
 
                                       </body>
