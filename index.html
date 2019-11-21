@@ -43,7 +43,7 @@ img {
             search</p>
         </div>
  <script>
- function run(){
+ 
   
   window.SpeechRecogniton = window.SpeechRecogniton || window.wbkitSpeechRecogniton;
   
@@ -61,12 +61,13 @@ img {
   .join('')
   
   z.value = transcript;
+    console.log(transcript);
   
   
   
   recognition.start()
    });
-  }
+  
   
  
  
