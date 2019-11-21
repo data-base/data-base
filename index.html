@@ -35,27 +35,36 @@ img {
      
         <input type="text" id="usr" value=""/>
         <button onclick="Get_info()" style="background-color: greenyellow ; border-color: black ;">Enter</button>
+        <button onclick="Get_info()" style="background-color: greenyellow ; border-color: black ;">test</button>
+        
         <img class="halfsize" src="" id="img" hidden="hidden" />
  <p id="output">
 
             search</p>
         </div>
  <script>
- 
+ function run(){
   window.SpeechRecognition = window.SpeechRecognition || window.
   recognition.interimResaults = true;
    var z = document.getElementById('usr')
    const words = document.querySelector('.words')
    words.appendChild(z)
    recognition.addEventListener('result' e => {
-                      });
+                  
   const transcript = Array.from(e.results)
-  .map(result =>
+  
+  re
+  .map(result => rusult[0])
+  .map(result => rusult.transcript)
+  .join('')
+  
+  z.value = transcript;
   
   
   
-  
+  recognition.start()
    });
+  }
   
  
  
