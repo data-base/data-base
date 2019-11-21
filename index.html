@@ -47,6 +47,8 @@ img {
   
   window.SpeechRecogniton = window.SpeechRecogniton || window.wbkitSpeechRecogniton;
   
+  const recognition = new SpeechRecogniton(); 
+  
   recognition.interimResaults = true;
    var z = document.getElementById('usr')
    const words = document.querySelector('.words')
